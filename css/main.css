@@ -16,11 +16,11 @@
 }
 
 /* Elements */
-a {
+/*a {
 	text-decoration: none;
-}
+}*/
 /*changing all the hyperlink formatting*/
-/*a,
+a,
 a > span {
 	position: relative;
 	color: #999;
@@ -39,7 +39,7 @@ a > span:after {
 	position: absolute;
 	transition: transform .1s ease-in-out;
 }
-.effect {
+/*.effect {
 	padding-top: 0;
 }
 .effect:before {
