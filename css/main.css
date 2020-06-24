@@ -16,10 +16,40 @@
 }
 
 /* Elements */
-a {
-    text-decoration: none;
+/*changing all the hyperlink formatting*/
+a,
+a > span {
+	position: relative;
+	color: #999;
+	text-decoration: none;
+	line-height: 22px;
+	transition: color .1s ease-in-out;
 }
-
+a:hover {
+	color: #bbb;
+}
+a:before,
+a:after,
+a > span:before,
+a > span:after {
+	content: '';
+	position: absolute;
+	transition: transform .1s ease-in-out;
+}
+.effect {
+	padding-top: 0;
+}
+.effect:before {
+	left: 0;
+	bottom: -3px;
+	width: 100%;
+	height: 2px;
+	background: #999;
+	transform: scaleX(0);
+}
+.effect:hover:before {
+	transform: scaleX(0.95);
+/*back to Elements*/
 html {
     margin: 0;
     padding: 0;
