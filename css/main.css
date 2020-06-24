@@ -16,8 +16,11 @@
 }
 
 /* Elements */
+a {
+	text-decoration: none;
+}
 /*changing all the hyperlink formatting*/
-a,
+/*a,
 a > span {
 	position: relative;
 	color: #999;
@@ -48,7 +51,7 @@ a > span:after {
 	transform: scaleX(0);
 }
 .effect:hover:before {
-	transform: scaleX(0.95);
+	transform: scaleX(0.95); */
 /*back to Elements*/
 html {
     margin: 0;
