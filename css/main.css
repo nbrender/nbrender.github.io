@@ -29,7 +29,7 @@ a > span {
 	transition: color .1s ease-in-out;
 }
 a:hover {
-	color: #bb0000;
+	color: #999;
 }
 a:before,
 a:after,
