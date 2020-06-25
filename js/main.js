@@ -12,7 +12,7 @@ const tabKeyCode = 9;
 const enterKeyCode = 13;
 const escapeKeyCode = 27;
 const searchBarElement = document.getElementById('search-bar');
-const clockElement = document.getElementById('clock');
+const clockElement = document.getElementById('clock1');
 const formElement = document.getElementById('search-form');
 
 /**

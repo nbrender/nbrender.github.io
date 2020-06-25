@@ -2,39 +2,113 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Startpage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <noscript>
-        <style>
-            #clock {
-                display: none;
-            }
-        </style>
-    </noscript>
+    <link rel="stylesheet" type="text/css" media="all" href="css/main.css" />
+	<script src="https://code.jquery.com/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/master.js" type="text/javascript" charset="utf-8"></script>
+	<!--script src="js/main.js"></script>-->
 </head>
 
 <body>
-    <main>
-        <div id="top-div">
-            <div id="clock-div">
-                <h1 id="clock">
-                    00/00/0000
-                    00:00
-                </h1>
-            </div>
-
-            <!--form id="search-form" action="https://duckduckgo.com">
-                <div id="search-bar-wrapper">
-                    <input id="search-bar" name="q" type="text" title="Search" />
-                    <button id="search-bar-btn" type="submit">&#128270;</button>
-                </div>
-            </form-->
+		<div id="progressbar"></div>
+        <div id="clock">
+			<span class="word on">It </span>
+            <span class="word nbsp"></span>
+            <span class="word on">is </span>
+            <span class="word nbsp"></span>
+            <span class="word" id="m_20">twenty </span>
+            <!--br /-->
+            <span class="word" id="m_15">quarter </span>
+            <span class="word nbsp"></span>
+            <span class="word" id="m_30">half </span>
+            <!--br /-->
+            <span class="word" id="m_10">ten </span>
+            <span class="word" id="m_5">five </span>
+            <span class="word nbsp"></span>
+            <span class="word" id="past">past </span>
+            <!--br /-->
+            <span class="word" id="to">to </span>
+            <span class="word nbsp"></span>
+            <span class="word" id="h_0">noon </span>
+            <span class="word" id="h_1">one </span>
+            <!--br /-->
+            <span class="word" id="h_2">two </span>
+            <span class="word" id="h_3">three </span>
+            <span class="word" id="h_4">four </span>
+            <!--br /-->
+            <span class="word" id="h_5">five </span>
+            <span class="word" id="h_6">six </span>
+            <span class="word" id="h_7">seven </span>
+            <!--br /-->
+            <span class="word" id="h_8">eight </span>
+            <span class="word" id="h_9">nine </span>
+            <span class="word" id="h_10">ten </span>
+            <!--br /-->
+            <span class="word nbsp"></span>
+            <span class="word nbsp"></span>
+            <span class="word nbsp"></span>
+            <span class="word" id="h_11">eleven </span>
+			<span class="word" id="h_12">midnight </span>
+            <span class="word nbsp"></span>
+            <span class="word nbsp"></span>
+            <span class="word nbsp"></span>
+            <!--br /-->
+            <span class="word nbsp"></span>
+            <span class="word" id="m_0">O'Clock </span>
+            <span class="word nbsp"></span>
+            <span class="word on">on </span>
+			<!--br /-->
+			<span class="word" id="mm_0">january </span>
+			<span class="word" id="mm_1">february </span>
+			<span class="word" id="mm_2">march </span>
+			<span class="word" id="mm_3">april </span>
+			<span class="word" id="mm_4">may </span>
+			<span class="word" id="mm_5">june </span>
+			<span class="word" id="mm_6">july </span>
+			<span class="word" id="mm_7">august </span>
+			<span class="word" id="mm_8">september </span>
+			<span class="word" id="mm_9">october </span>
+			<span class="word" id="mm_10">november </span>
+			<span class="word" id="mm_11">december </span>
+			<!--br /-->
+			<span class="word" id="d_1">  1st </span>
+			<span class="word" id="d_2">  2nd </span>
+			<span class="word" id="d_3">  3rd </span>
+			<span class="word" id="d_4">  4th </span>
+			<span class="word" id="d_5">  5th </span>
+			<span class="word" id="d_6">  6th </span>
+			<span class="word" id="d_7">  7th </span>
+			<span class="word" id="d_8">  8th </span>
+			<span class="word" id="d_9">  9th </span>
+			<span class="word" id="d_10">10th </span>
+			<span class="word" id="d_11">11th </span>
+			<span class="word" id="d_12">12th </span>
+			<span class="word" id="d_13">13th </span>
+			<span class="word" id="d_14">14th </span>
+			<span class="word" id="d_15">15th </span>
+			<span class="word" id="d_16">16th </span>
+			<span class="word" id="d_17">17th </span>
+			<span class="word" id="d_18">18th </span>
+			<span class="word" id="d_19">19th </span>
+			<span class="word" id="d_20">20th </span>
+			<span class="word" id="d_21">21st </span>
+			<span class="word" id="d_22">22nd </span>
+			<span class="word" id="d_23">23rd </span>
+			<span class="word" id="d_24">24th </span>
+			<span class="word" id="d_25">25th </span>
+			<span class="word" id="d_26">26th </span>
+			<span class="word" id="d_27">27th </span>
+			<span class="word" id="d_28">28th </span>
+			<span class="word" id="d_29">29th </span>
+			<span class="word" id="d_30">30th </span>
+			<span class="word" id="d_31">31st </span>
         </div>
+    <main>
         <div id="links-container">
             <section class="link-section">
-                <h2 class="link-section-title grey">WE Applications</h2>
+                <h2 class="link-section-title grey">Work</h2>
                 <hr />
                 <ul class="link-list">
                     <li class="link-list-item"><a class="link" href="#">Okta</a></li>
@@ -42,28 +116,6 @@
                     <li class="link-list-item"><a class="link" href="#">Website 3</a></li>
                     <li class="link-list-item"><a class="link" href="#">Website 4</a></li>
                     <li class="link-list-item"><a class="link" href="#">Website 5</a></li-->
-                </ul>
-            </section>
-            <section class="link-section">
-                <h2 class="link-section-title grey">WE Documentation</h2>
-                <hr />
-                <ul class="link-list">
-                    <li class="link-list-item"><a class="link" href="#">Website 1</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 2</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 3</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 4</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 5</a></li>
-                </ul>
-            </section>
-            <section class="link-section">
-                <h2 class="link-section-title grey">Favorite Sites</h2>
-                <hr />
-                <ul class="link-list">
-                    <li class="link-list-item"><a class="link" href="#">Website 1</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 2</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 3</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 4</a></li>
-                    <li class="link-list-item"><a class="link" href="#">Website 5</a></li>
                 </ul>
             </section>
             <section class="link-section">
@@ -77,10 +129,30 @@
                     <li class="link-list-item"><a class="link" href="#">Website 5</a></li>
                 </ul>
             </section>
+            <section class="link-section">
+                <h2 class="link-section-title grey">Fun</h2>
+                <hr />
+                <ul class="link-list">
+                    <li class="link-list-item"><a class="link" href="#">Website 1</a></li>
+                    <li class="link-list-item"><a class="link" href="#">Website 2</a></li>
+                    <li class="link-list-item"><a class="link" href="#">Website 3</a></li>
+                    <li class="link-list-item"><a class="link" href="#">Website 4</a></li>
+                    <li class="link-list-item"><a class="link" href="#">Website 5</a></li>
+                </ul>
+            </section>
+            <section class="link-section">
+                <h2 class="link-section-title grey">Extra</h2>
+                <hr />
+                <ul class="link-list">
+                    <li class="link-list-item"><a class="link" href="#">Website 1</a></li>
+                    <li class="link-list-item"><a class="link" href="#">Website 2</a></li>
+                    <li class="link-list-item"><a class="link" href="#">Website 3</a></li>
+                    <li class="link-list-item"><a class="link" href="#">Website 4</a></li>
+                    <li class="link-list-item"><a class="link" href="#">Website 5</a></li>
+                </ul>
+            </section>
         </div>
     </main>
-
-    <script src="js/main.js"></script>
 </body>
 
 </html>
