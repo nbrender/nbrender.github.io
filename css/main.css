@@ -19,6 +19,11 @@
     src: url("../fonts/CMUTypewriter.ttf");
 }
 
+@font-face {
+    font-family: LibertinusMonoReg;
+    src: url("../fonts/Libertinus Mono Regular 400.otf");
+}
+
 /* Animations */
 @keyframes fade-in {
     from {opacity: 0;}
@@ -77,12 +82,12 @@ html {
 }
 
 /*body {
-    align-items: center;
-    background-color: #1f1f1f;
-    color: #ddd;
-    display: flex;
+    align-items: left;
+    --background-color: #1f1f1f;
+    --color: #ddd;
+    --display: flex;
     height: 100%;
-    justify-content: center;
+    justify-content: left;
     margin: 0;
     padding: 0;
     vertical-align: top;
@@ -174,7 +179,7 @@ hr {
     margin: 1em;
     background: #A6B6B8;
     border-radius: .5em;
-    font-family: cmutypewriter, arial;/*, 'Courier New', monospace;*/
+    font-family: LibertinusMonoReg, cmutypewriter, arial;/*, 'Courier New', monospace;*/
     word-spacing: -1.1em;
     letter-spacing: .5em;
     white-space: nowrap;
@@ -192,7 +197,7 @@ hr {
 #clock > .word.on {
     opacity: 1;
     color: #6A7D7D; /*#0af;*/
-    text-shadow: 0px 0px 5px #6A7D7D; /*#6bf;*/
+    text-shadow: 0px 0px 8px #6A7D7D; /*#6bf;*/
     visibility: visible;
     display: inline;
 }
@@ -308,7 +313,7 @@ hr {
     }
 
     #links-container {
-        padding: 2vh 15vw 2vh 15vw;
+        padding: 2vh 2vw 2vh 2vw;
     }
 
 }
