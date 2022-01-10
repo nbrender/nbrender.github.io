@@ -24,6 +24,11 @@
     src: url("../fonts/Libertinus Mono Regular 400.otf");
 }
 
+@font-face {
+    font-family: SagonaBook;
+    src: url("../fonts/SAGONABOOK.TTF");
+}
+
 /* Animations */
 @keyframes fade-in {
     from {opacity: 0;}
@@ -79,7 +84,7 @@ html {
     color: #2E3F44;
 
     --text-shadow: 1px 1px 2px #2E3F44;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 /*body {
@@ -97,7 +102,7 @@ html {
 main {
     animation-duration: 1s;
     animation-name: fade-in;
-    font-family: "High Tower Text"; /*Roboto-Light, sans-serif;*/
+    font-family: "SagonaBook"; /*"High Tower Text", Roboto-Light, sans-serif;*/
     margin: auto;
     width: 100%;
 }
@@ -110,8 +115,9 @@ hr {
 
 /* Classes */
 .goal-title {
+    font-family: "Franklin Gothic";
     background-color: transparent;
-    font-size: 24px;
+    font-size: 20px;
     color: #A6B6B8;
 }
 
@@ -120,6 +126,8 @@ hr {
 }
 
 .link-section {
+    /*font-family: "High Tower Text";*/
+    font-size: 16px;
     background-color: #6A7D7D; /*#252525;*/
     padding: 5px;
     overflow-y: auto;
@@ -128,6 +136,7 @@ hr {
 }
 
 .link-section-title {
+    font-family: "High Tower Text";
     font-size: 26px;
     margin: 0;
     font-weight: normal;
@@ -139,6 +148,8 @@ hr {
 }
 
 .link-list-item {
+    font-family: "High Tower Text";
+    font-size: 18px;
     align-items: left;
     display: flex;
     height: 1.5em;
@@ -177,8 +188,8 @@ hr {
 }
 
 .tab {
-    margin-left:20px;
-    margin-top: 0;
+    margin-left:16px;
+    margin-top: 8px;
     margin-bottom: 0;
     }
 
